@@ -1,0 +1,377 @@
+.solutions{
+    padding:   60px 0 60px;
+    .solutions-content{
+        margin: 30px auto;
+        width: 80%;
+        .h2.heading{
+            position: relative;
+            padding: 30px 0;
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            color: $maincolor;
+            &::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(0, -50%);
+                width: 60px;
+                height: 8px;
+                transform: skewX(-45deg) translateX(-50%);
+                background: #000;
+            }
+        }
+        .load{
+            line-height: 31px;
+            letter-spacing: 1.5px;
+            margin: 0 0 30px 0;
+        }
+    }
+
+    .featurs-solution{
+        overflow: hidden;
+        margin: 40px;
+        text-align: center;
+        img{
+            width: 100%;
+            display: block !important;
+        }
+        h4{
+            display: inline-block;
+            margin: 10px 0;
+            padding: 5px 0;
+            font-weight: bold;
+            color:$graycolor;
+            text-transform: uppercase;
+            border-bottom: 3px solid $maincolor;
+        }
+    }
+
+
+
+}
+
+// start our work 
+
+.our-work
+{
+    padding: 60px 0 ;
+    background:$background-dark ;
+    .h3{
+        position: relative;
+        padding: 10px 0 0 0 ;
+        margin: 30px 0 30px ;
+        font-weight: bold;
+        color: $content-color;
+        &::after{
+            content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+               
+                width: 50px;
+                height: 4px;
+                transform: skewX(-45deg) ;
+                background: $content-color;
+        }
+    }
+    .link{
+        display: block;
+        color: $content-color;
+        font-weight: 500;
+        transition: all 0.3s ease-out;
+        text-transform: uppercase;
+        &:hover{
+            color: $maincolor;
+            text-decoration: none;
+        }
+
+    }
+
+    h4{
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 20 0 40px ;
+        padding: 10px 0;
+        color: $content-color;
+        position: relative;
+        &::after{
+            content: "";
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+               
+                width: 50px;
+                height: 6px;
+                transform: skewX(-45deg) ;
+                background: $background-dark;
+        }
+    }
+    .work-p{
+        color:$content-color;
+        line-height: 25px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        margin: 30px 0;
+    }
+    .link-work{
+        color:$content-color;
+        line-height: 25px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin: 30px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+  
+    .all-works{
+        padding:  10px 0 40px;
+        .main-work{
+            margin: 30px 0 ;
+            height: 500px;
+            background: url(../../../images/cover.jpg) center center ;
+            background-size: cover;
+            .projects{
+                
+                padding: 30px;
+                background: url(../../../images/bg.png) 100% 100% ;
+                height: 500px;
+    
+                
+            }
+            
+    
+            
+        }
+        .other-project{
+            background:url(../../../images/bg.png) 100% 100%  ;
+            padding: 20px;
+            margin: 0 0 30px;
+        }
+    
+    }
+  
+    .new-works{
+        .newst-item{
+            padding: 10px;
+            background: url(../../../images/red-bg.png) 100% 100%;
+            height: 300px;
+            margin: 20px 0;
+
+           a{
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 20 0 40px ;
+            padding: 10px 0;
+            color: $content-color;
+            position: relative;
+            &::after{
+                content: "";
+                    position: absolute;
+                    bottom: -10px;
+                    left: 0;
+                   
+                    width: 50px;
+                    height: 6px;
+                    transform: skewX(-45deg) ;
+                    background: $background-dark;
+            }
+           }
+
+           .work-p{
+               font-size: 13px;
+           }
+        }
+    }
+
+
+}
+
+
+// start reviews 
+
+.reviews{
+    min-height: 60vh;
+    padding: 30px 0;
+    width: 100%;
+    overflow: hidden;
+    background: $review;
+    .data{
+        display: flex;
+        min-height: 60vh;
+        align-items: center;
+        .row{
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+    }
+
+    .img-review{
+  
+        overflow: hidden;
+        width: 250px;
+        margin:20px  auto;
+        
+        img{
+            border-radius: 50%;
+            height: 100%;
+            
+            object-fit: cover;
+        }
+
+        
+    }
+
+    .review-content{
+        PADDING: 0 100PX 0 0 ;
+        span{
+            display: inline-block;
+            width: 65px;
+            height: 8px;
+            background: $background-dark;
+            margin: 10px 0  ;
+            transform: skewX(-45deg);
+        }
+        p{
+            
+            line-height: 30px;
+            font-size: 20px;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            margin: 10px 0;
+        }
+        h3{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        a{
+            font-size: 14px;
+            color: $background-dark;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+    }
+}
+
+
+// start parteners  
+.partenars{
+    padding: 60px 0;
+    background: $background-dark;
+    h3{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 20px 0 50px;
+        color: $graycolor;
+    }
+
+    .partners-logos
+    {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .cont-img{
+            width: 180px;
+            margin: auto;
+            overflow: hidden;
+            img{
+                width: 100%;
+                display: block;
+            }
+        }
+        
+    }
+
+}
+
+
+// start search fixed
+
+    .search{
+        padding: 40px 0;
+        background: $background-dark;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+        
+        transform: translateY(-100%);
+        transition: all 0.4s ease-out;
+       // display: none;
+        &.slid{
+            transform: translateY(0);
+         }
+
+       .exit{
+           position: absolute;
+           right: 10%;
+           top: 40px;
+           cursor: pointer;
+           width: 50px;
+           display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+           
+           span{
+            
+
+            height: 4px;
+            background: $maincolor;
+            margin: 0;
+            transform: skewX(0deg); 
+            pointer-events:none ;
+            &:first-of-type{
+                transform: rotate(-45deg);
+            }
+            &:last-of-type{
+                transform: rotate(45deg);
+            }
+           }
+       }
+        span{
+            
+            display: block;
+            width: 65px;
+            text-align: center;
+            height: 8px;
+            background: $graycolor;
+            margin: 10px auto  ;
+            transform: skewX(-45deg);
+        }
+        h5{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 20px 0 50px;
+            color: $graycolor;
+        }
+        .form-control{
+            font-size: 2rem;
+            background: #08080863;
+
+            border-radius: 0;
+            border: 0;
+            color: #fff;
+            /* padding: 10px; */
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 2px solid $background-dark;
+        }
+    }

@@ -1,0 +1,47 @@
+
+nav{
+    width: 100% ;
+    background: $content-color;
+    .navbar-nav{
+        margin: 0 0 0 60px;
+    
+        .active{
+            >.nav-link{
+                color: $maincolor !important;
+            } 
+        }
+    
+        .nav-link{
+            font-size: 14px;
+            font-weight: bolder;
+            margin: 0 8px ;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    
+    
+    }
+    
+    .search-icon{
+        cursor: pointer;
+        a{
+            margin: 0 28px;
+            cursor:  pointer;
+            pointer-events: none;
+            transform: rotate(90deg);
+            color: #000;
+        }
+    }
+    .form-inline{
+        .btn-mgf{
+            
+            &:hover{
+                background: $maincolor !important;
+                color: $content-color !important;
+            }
+        } 
+    }
+    
+}
+
+
