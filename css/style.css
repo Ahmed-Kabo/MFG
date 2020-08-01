@@ -176,7 +176,7 @@ nav .form-inline .btn-mgf:hover {
   background: #E4743D;
   min-width: 143px;
   border-radius: 0;
-  border-image: url(../../../images/button.png) 1 fill stretch;
+  border-image: url(../images/button.png) 1 fill stretch;
   letter-spacing: 1px;
   font-size: 16px;
   padding: 20px 0;
