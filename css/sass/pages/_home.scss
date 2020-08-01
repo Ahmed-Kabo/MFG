@@ -2,15 +2,18 @@
     padding:   60px 0 60px;
     .solutions-content{
         margin: 30px auto;
-        width: 80%;
+        width: 90%;
         .h2.heading{
             position: relative;
             padding: 30px 0;
-            margin: 20px 0;
+            margin: 0;
             font-weight: bold;
             font-size: 2.5rem;
             text-transform: uppercase;
             color: $maincolor;
+            @media (max-width: 500px) {
+                font-size: 2rem;
+            }
             &::after{
                 content: "";
                 position: absolute;
@@ -27,11 +30,14 @@
             line-height: 31px;
             letter-spacing: 1.5px;
             margin: 0 0 30px 0;
+            @media (max-width: 500px) {
+                font-size: 19px;
+            }
         }
     }
 
     .featurs-solution{
-        overflow: hidden;
+        
         margin: 40px;
         text-align: center;
         img{
@@ -46,6 +52,9 @@
             color:$graycolor;
             text-transform: uppercase;
             border-bottom: 3px solid $maincolor;
+            @media (max-width: 500px) {
+                font-size: 20px;
+            }
         }
     }
 
@@ -126,6 +135,30 @@
         margin: 30px 0;
         text-transform: uppercase;
         font-weight: bold;
+         transition: all 0.3s ease-out;
+                padding: 5px 0;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 1px;
+                    width: 0;
+                    transition: all 0.3s ease-out;
+                    background: $content-color;
+                }
+                
+
+                &:hover{
+                
+                    text-decoration: none;
+                    
+                    &::after{
+                        width: 100%;
+
+                    }
+                }
     }
 
   
@@ -159,29 +192,36 @@
     .new-works{
         .newst-item{
             padding: 10px;
-            background: url(../../../images/red-bg.png) 100% 100%;
-            height: 300px;
+            background: url(../../../images/green.png) 100% 100%;
+            max-height: 300px;
             margin: 20px 0;
+            overflow: hidden;
 
            a{
-            font-size: 20px;
+            font-size: 19px;
             font-weight: bold;
-            text-transform: uppercase;
+            text-transform: capitalize;
             margin: 20 0 40px ;
             padding: 10px 0;
             color: $content-color;
             position: relative;
+            transition: all 0.3S ease-in-out;
             &::after{
                 content: "";
                     position: absolute;
                     bottom: -10px;
                     left: 0;
-                   
                     width: 50px;
                     height: 6px;
                     transform: skewX(-45deg) ;
                     background: $background-dark;
             }
+
+            &:hover{
+                text-decoration: none;
+                color: $maincolor;
+            }
+            
            }
 
            .work-p{
@@ -197,11 +237,11 @@
 // start reviews 
 
 .reviews{
-    min-height: 60vh;
+    min-height: 70vh;
     padding: 30px 0;
     width: 100%;
     overflow: hidden;
-    background: $review;
+    background: #F0B323;
     .data{
         display: flex;
         min-height: 60vh;
@@ -231,7 +271,11 @@
     }
 
     .review-content{
-        PADDING: 0 100PX 0 0 ;
+        PADDING: 0 20PX 0 0 ;
+        @media (max-width:768px) {
+            text-align: center;
+        }
+
         span{
             display: inline-block;
             width: 65px;
@@ -247,6 +291,9 @@
             letter-spacing: 1px;
             text-transform: capitalize;
             margin: 10px 0;
+            @media (max-width:768px) {
+                font-size: 18px;
+            }
         }
         h3{
             font-weight: bold;
@@ -260,13 +307,61 @@
         }
 
     }
+
+    .carousel-control-next-icon ,
+    .carousel-control-prev-icon
+    {
+        background-image: none;
+        position: relative;
+        &::after
+        {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background: #ffffff;
+            z-index: 5;
+            transform: translate(0, 29px) rotate(-45deg);
+        }
+        &::before
+        {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background: #ffffff;
+            z-index: 5;
+            transform: translate(0, -6px) rotate(45deg);
+
+        }
+        
+        
+    }
+    .carousel-control-prev-icon
+    {
+        &::after
+        {
+        
+            transform:translate(0, 28px) rotate(45deg) !important;
+        }
+        &::before
+        {
+
+            transform: translate(0,-6px) rotate(-45deg) !important;
+
+        }
+    }
+
+
 }
+
 
 
 // start parteners  
 .partenars{
     padding: 60px 0;
-    background: $background-dark;
+    background: #fff;
+    min-height: 50vh;
     h3{
         text-align: center;
         font-size: 2rem;
@@ -296,6 +391,51 @@
         
     }
 
+
+    .carousel-control-next-icon ,
+    .carousel-control-prev-icon
+    {
+        background-image: none;
+        position: relative;
+        &::after
+        {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background: #000;
+            z-index: 5;
+            transform: translate(0, 29px) rotate(-45deg);
+        }
+        &::before
+        {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background: #000;
+            z-index: 5;
+            transform: translate(0, -6px) rotate(45deg);
+
+        }
+        
+        
+    }
+    .carousel-control-prev-icon
+    {
+        &::after
+        {
+        
+            transform:translate(0, 28px) rotate(45deg) !important;
+        }
+        &::before
+        {
+
+            transform: translate(0,-6px) rotate(-45deg) !important;
+
+        }
+    }
+
 }
 
 
@@ -320,9 +460,11 @@
        .exit{
            position: absolute;
            right: 10%;
-           top: 40px;
+           top: 10%;
            cursor: pointer;
            width: 50px;
+           height: 50px;
+           overflow: hidden;
            display: flex;
             flex-direction: column;
             align-items: center;
@@ -330,8 +472,8 @@
            
            span{
             
-
-            height: 4px;
+            height: 2px;
+            width: 100%;
             background: $maincolor;
             margin: 0;
             transform: skewX(0deg); 
@@ -356,11 +498,14 @@
         }
         h5{
             text-align: center;
-            font-size: 2rem;
             font-weight: bold;
             text-transform: uppercase;
             margin: 20px 0 50px;
             color: $graycolor;
+            @media (min-width:768px) {
+                font-size: 1.4rem;
+
+            }
         }
         .form-control{
             font-size: 2rem;
@@ -375,3 +520,25 @@
             border-bottom: 2px solid $background-dark;
         }
     }
+// start to top 
+
+.to-top{
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    background: $content-color;
+    border-radius: 10px;
+    color: $maincolor;
+   box-shadow:  0 0 5px rgb(0 0 0 / 28%);
+    cursor: pointer;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+
+    
+}

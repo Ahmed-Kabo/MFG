@@ -2,34 +2,143 @@
 nav{
     width: 100% ;
     background: $content-color;
-    .navbar-nav{
-        margin: 0 0 0 60px;
+    box-shadow: 0px 9px 20px 0px rgb(0 0 0 / 17%);
+
+    .navbar-toggler{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 40px;
+        outline: 0;
+        border: none;
+        
+
+        &.collapsed{
+            .navbar-toggler-icon{
+                background-image: none !important;
+                height: 3px;
+                border-radius: 20px;
+                background: $maincolor;
+                position: relative;
+                transition: all 0.3s ease-out ;
+
+                &:first-of-type{
+                    transform: rotate(0deg) !important; 
+                }
+                &:nth-child(2){
+                    opacity: 1; 
+                }
+                &:last-child{
+                    transform: rotate(0deg) !important; 
+                }
     
-        .active{
-            >.nav-link{
-                color: $maincolor !important;
             } 
         }
-    
-        .nav-link{
-            font-size: 14px;
-            font-weight: bolder;
-            margin: 0 8px ;
-            letter-spacing: 1px;
-            text-transform: uppercase;
+        .navbar-toggler-icon{
+            background-image: none !important;
+            height: 3px;
+            border-radius: 20px;
+            background: $graycolor;
+            position: relative;
+            transition: all 0.3s ease-out ;
+            &:first-of-type{
+                transform:  translate(0,10px) rotate(-45deg) !important; 
+            }
+            &:nth-child(2){
+                opacity: 0; 
+            }
+            &:last-child{
+                transform:translate(0,-10px) rotate(45deg) !important; 
+            }
+            
         }
-    
     
     }
     
+    .navbar-collapse{
+        @media (max-width: 768px) {
+            margin-left:  30px ;
+        }
+        .navbar-nav{
+            margin: 0 0 0 60px;
+            @media (max-width: 768px) {
+                padding:  20px 0 0 0;
+                margin: 0;
+            }
+        
+            .active{
+                >.nav-link{
+                    color: $maincolor !important;
+                    &::after{
+                        width: 100%;
+                    }
+
+                } 
+            }
+        
+            .nav-link{
+                font-size: 14px;
+                font-weight: bolder;
+                margin: 0 15px ;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                transition: all 0.3s ease-out;
+                padding: .8rem 0;
+                
+                position: relative;
+                &.dropdown-toggle::after
+                {
+                    content: none;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 1px;
+                    width: 0;
+                    transition: all 0.3s ease-out;
+                    background: $maincolor;
+                }
+               
+                
+
+                &:hover{
+                 //   padding-left: 10px;
+                    color: $maincolor;
+                    &::after{
+                        width: 100%;
+                    }
+                }
+                @media (max-width: 768px) {
+                    padding: 18px 0;
+                    
+                    &:hover{
+                        padding-left: 10px;
+                        color: $maincolor;
+                    }
+                }
+                
+               
+            }
+        
+        
+        }
+    }
+   
+    
     .search-icon{
         cursor: pointer;
+        display: block;
+        width: 8%;
+        margin: auto;
         a{
             margin: 0 28px;
             cursor:  pointer;
             pointer-events: none;
             transform: rotate(90deg);
-            color: #000;
+            color: $graycolor;
         }
     }
     .form-inline{

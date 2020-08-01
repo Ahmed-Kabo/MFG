@@ -1,0 +1,124 @@
+body{
+    direction: rtl !important;
+    text-align: right ;
+    font-family: 'Changa', sans-serif;
+
+}
+
+
+/*
+-----------
+navbar 
+----------
+
+*/
+
+
+.nav  .navbar-nav{
+    
+}
+
+nav .navbar-collapse .navbar-nav {
+    margin-right: 65px !important;
+}
+nav .navbar-collapse .navbar-nav .nav-link{
+    font-size: 17px;
+   
+    margin: 0 15px;
+}
+
+
+/* button */
+.btn-mgf{
+    border-image: url("../images/button-rtl.png") 1 fill stretch !important;
+}
+
+
+
+
+
+
+
+@media (min-width:992px) {
+    header .content-box
+    {
+        width: 70% ;
+        text-align: justify;
+    }
+    
+}
+
+header .content-box .load{
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 1.6rem !important;
+}
+@media (max-width:500px) {
+    header .content-box .load
+    {
+        font-weight: normal;
+        font-size: 1.3rem !important;
+    }
+    
+}
+
+/* soultion */
+.solutions .solutions-content .load{
+    letter-spacing: 1px;
+}
+@media (min-width:992px) {
+    header .content-box
+    {
+        width: 70% ;
+        text-align: justify;
+    }
+    
+}
+
+
+/*   our work */
+.our-work .h3::after{
+    left: auto;
+    right: 0;
+}
+.our-work h4::after{
+    left: auto;
+    right: 0;
+}
+.our-work .work-p{
+    
+    line-height: 22px;
+    font-size: 15px;
+    letter-spacing: 1px;
+  
+}
+.our-work .new-works .newst-item a::after{
+    content:none ;
+}
+.our-work .all-works .main-work .projects{
+    background: url(../images/bg-rtl.png) 0% 100%;
+}
+
+.our-work .all-works .other-project
+{
+    background: url(../images/bg-rtl.png) 0% 100%;
+}
+
+
+.our-work .new-works .newst-item{
+    background: url(../images/green-rtl.png) 0% 100%;
+}
+/****
+------------ footer 
+****/
+
+.footer ul li a{
+    font-size: 16px;
+}
+
+
+a::after{
+    left: auto !important;
+    right: 0 !important;
+}
